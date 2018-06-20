@@ -12,9 +12,12 @@
 		CE5A254B20D232DB00909871 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5A254920D232DB00909871 /* Main.storyboard */; };
 		CE5A254D20D232DD00909871 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5A254C20D232DD00909871 /* Assets.xcassets */; };
 		CE5A255020D232DD00909871 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5A254E20D232DD00909871 /* LaunchScreen.storyboard */; };
+		CE66007420D332F100D7D56B /* imagga.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE66007320D332F100D7D56B /* imagga.swift */; };
+		D4A056E17502B8ADF5109D6D /* Pods_moodApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD830B6558E8325D936E7530 /* Pods_moodApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		753FB9D56825854D1F7A6003 /* Pods-moodApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moodApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-moodApp/Pods-moodApp.debug.xcconfig"; sourceTree = "<group>"; };
 		CE5A254220D232DB00909871 /* moodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = moodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5A254520D232DB00909871 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE5A254720D232DB00909871 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		CE5A254C20D232DD00909871 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE5A254F20D232DD00909871 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE5A255120D232DD00909871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE66007320D332F100D7D56B /* imagga.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagga.swift; sourceTree = "<group>"; };
+		D31EAF86DC348097AEC4D0FB /* Pods-moodApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moodApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-moodApp/Pods-moodApp.release.xcconfig"; sourceTree = "<group>"; };
+		FD830B6558E8325D936E7530 /* Pods_moodApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_moodApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4A056E17502B8ADF5109D6D /* Pods_moodApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		030480751326FA410E9C77E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				753FB9D56825854D1F7A6003 /* Pods-moodApp.debug.xcconfig */,
+				D31EAF86DC348097AEC4D0FB /* Pods-moodApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		71F666F66D97D9E88C87678E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD830B6558E8325D936E7530 /* Pods_moodApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE5A253920D232DB00909871 = {
 			isa = PBXGroup;
 			children = (
 				CE5A254420D232DB00909871 /* moodApp */,
 				CE5A254320D232DB00909871 /* Products */,
+				030480751326FA410E9C77E7 /* Pods */,
+				71F666F66D97D9E88C87678E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				CE5A254520D232DB00909871 /* AppDelegate.swift */,
+				CE66007320D332F100D7D56B /* imagga.swift */,
 				CE5A254720D232DB00909871 /* ViewController.swift */,
 				CE5A254920D232DB00909871 /* Main.storyboard */,
 				CE5A254C20D232DD00909871 /* Assets.xcassets */,
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE5A255420D232DD00909871 /* Build configuration list for PBXNativeTarget "moodApp" */;
 			buildPhases = (
+				6BD31E48B5D383A1EDDCFBCE /* [CP] Check Pods Manifest.lock */,
 				CE5A253E20D232DB00909871 /* Sources */,
 				CE5A253F20D232DB00909871 /* Frameworks */,
 				CE5A254020D232DB00909871 /* Resources */,
+				22B4D47229BA959C89C681E6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +159,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		22B4D47229BA959C89C681E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-moodApp/Pods-moodApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-moodApp/Pods-moodApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BD31E48B5D383A1EDDCFBCE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-moodApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE5A253E20D232DB00909871 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CE5A254820D232DB00909871 /* ViewController.swift in Sources */,
+				CE66007420D332F100D7D56B /* imagga.swift in Sources */,
 				CE5A254620D232DB00909871 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,11 +351,13 @@
 		};
 		CE5A255520D232DD00909871 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 753FB9D56825854D1F7A6003 /* Pods-moodApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VFH547A942;
 				INFOPLIST_FILE = moodApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,11 +371,13 @@
 		};
 		CE5A255620D232DD00909871 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D31EAF86DC348097AEC4D0FB /* Pods-moodApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VFH547A942;
 				INFOPLIST_FILE = moodApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
