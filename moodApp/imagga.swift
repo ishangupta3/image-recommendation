@@ -17,7 +17,7 @@ import SwiftyJSON
 func tags(url: String, completion: @escaping (Array<Any>?) -> Void)  {
     
     
-    var tag: String = ""
+    var _: String = ""
     Alamofire.request("https://api.imagga.com/v1/tagging?url=\(url)",
         //   parameters: ["words" : "Monkey"],
         headers :["Authorization" : "Basic YWNjXzRmODY1YzNhNTdlZDVkYjozZTVmYzNhNjI0NmFjMzA3MTRhODA1ZGQ1MzAwMjNmMw=="]).responseJSON(completionHandler:  { response in

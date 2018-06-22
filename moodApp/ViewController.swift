@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         self.stock4Bool = false
         
         self.imageArray = [1,2,3,4]
-    
+        
     }
     
     
@@ -120,15 +120,13 @@ class ViewController: UIViewController {
                 let tag2sub = tag[2] as? String ?? "space"
                 
                 if self.stock1Bool == false {
-                print(tag1sub,tag2sub, "turnt good boy")
+                    print(tag1sub,tag2sub, "turnt good boy")
                     if let index = self.imageArray.index(of: 1) {
                         self.imageArray.remove(at: index)
                     }
-                self.doInitialRequest(tag1: tag1sub,  type: "one")
-                self.stock1Bool = true
+                    self.doInitialRequest(tag1: tag1sub,  type: "one")
+                    self.stock1Bool = true
                     
-               
-                
                 }
                 
                 
@@ -150,12 +148,12 @@ class ViewController: UIViewController {
                 let tag2sub = tag[2] as? String ?? "space"
                 
                 if self.stock2Bool == false {
-                print(tag1sub,tag2sub, "turnt good boy")
+                    print(tag1sub,tag2sub, "turnt good boy")
                     if let index = self.imageArray.index(of: 2) {
                         self.imageArray.remove(at: index)
                     }
-                self.doInitialRequest(tag1: tag1sub, type: "two")
-                self.stock2Bool = true
+                    self.doInitialRequest(tag1: tag1sub, type: "two")
+                    self.stock2Bool = true
                 }
             }
         }
@@ -173,12 +171,12 @@ class ViewController: UIViewController {
                 let tag2sub = tag[2] as? String ?? "space"
                 
                 if self.stock3Bool == false {
-                print(tag1sub,tag2sub, "turnt good boy")
+                    print(tag1sub,tag2sub, "turnt good boy")
                     if let index = self.imageArray.index(of: 3) {
                         self.imageArray.remove(at: index)
                     }
-                self.doInitialRequest(tag1: tag1sub,  type: "three")
-                self.stock3Bool = true
+                    self.doInitialRequest(tag1: tag1sub,  type: "three")
+                    self.stock3Bool = true
                 }
             }
             
@@ -198,12 +196,12 @@ class ViewController: UIViewController {
                 let tag2sub = tag[2] as? String ?? "space"
                 
                 if self.stock4Bool == false {
-                print(tag1sub,tag2sub, "turnt good boy")
+                    print(tag1sub,tag2sub, "turnt good boy")
                     if let index = self.imageArray.index(of: 4) {
                         self.imageArray.remove(at: index)
                     }
-                self.doInitialRequest(tag1: tag1sub, type: "four")
-                self.stock4Bool = true
+                    self.doInitialRequest(tag1: tag1sub, type: "four")
+                    self.stock4Bool = true
                 }
             }
             
@@ -278,68 +276,68 @@ class ViewController: UIViewController {
                                 }
                                 
                                 if self.number == 2 {
-                                     self.stockImage2?.af_setImage(withURL: stock2URL)
+                                    self.stockImage2?.af_setImage(withURL: stock2URL)
                                 }
                                 
                                 if self.number == 3 {
-                                     self.stockImage3?.af_setImage(withURL: stock3URL)
+                                    self.stockImage3?.af_setImage(withURL: stock3URL)
                                 }
                                 
                                 if self.number == 4{
-                                     self.stockImage4?.af_setImage(withURL: stock4URL)
+                                    self.stockImage4?.af_setImage(withURL: stock4URL)
                                 }
-                              
+                                
                             }
                             
                             
-                      
-                 print("")
-//                            if type == "initial" {
-//
-//                                self.stockImage1?.af_setImage(withURL: stock1URL)
-//                                self.stockImage2?.af_setImage(withURL: stock2URL)
-//                                self.stockImage3?.af_setImage(withURL: stock3URL)
-//                                self.stockImage4?.af_setImage(withURL: stock4URL)
-//
-//                            }
-//
-//                            if type == "one" {
-//
-//
-//                                self.stockImage2?.af_setImage(withURL: stock2URL)
-//                                self.stockImage3?.af_setImage(withURL: stock3URL)
-//                                self.stockImage4?.af_setImage(withURL: stock4URL)
-//
-//                            }
-//
-//                            if type == "two" {
-//
-//                                self.stockImage1?.af_setImage(withURL: stock1URL)
-//
-//                                self.stockImage3?.af_setImage(withURL: stock3URL)
-//                                self.stockImage4?.af_setImage(withURL: stock4URL)
-//
-//                            }
-//
-//
-//                            if type == "three" {
-//
-//                                self.stockImage1?.af_setImage(withURL: stock1URL)
-//                                self.stockImage2?.af_setImage(withURL: stock2URL)
-//
-//                                self.stockImage4?.af_setImage(withURL: stock4URL)
-//
-//                            }
-//
-//
-//                            if type == "four" {
-//
-//                                self.stockImage1?.af_setImage(withURL: stock1URL)
-//                                self.stockImage2?.af_setImage(withURL: stock2URL)
-//                                self.stockImage3?.af_setImage(withURL: stock3URL)
-//
-//
-//                            }
+                            
+                            print("")
+                            //                            if type == "initial" {
+                            //
+                            //                                self.stockImage1?.af_setImage(withURL: stock1URL)
+                            //                                self.stockImage2?.af_setImage(withURL: stock2URL)
+                            //                                self.stockImage3?.af_setImage(withURL: stock3URL)
+                            //                                self.stockImage4?.af_setImage(withURL: stock4URL)
+                            //
+                            //                            }
+                            //
+                            //                            if type == "one" {
+                            //
+                            //
+                            //                                self.stockImage2?.af_setImage(withURL: stock2URL)
+                            //                                self.stockImage3?.af_setImage(withURL: stock3URL)
+                            //                                self.stockImage4?.af_setImage(withURL: stock4URL)
+                            //
+                            //                            }
+                            //
+                            //                            if type == "two" {
+                            //
+                            //                                self.stockImage1?.af_setImage(withURL: stock1URL)
+                            //
+                            //                                self.stockImage3?.af_setImage(withURL: stock3URL)
+                            //                                self.stockImage4?.af_setImage(withURL: stock4URL)
+                            //
+                            //                            }
+                            //
+                            //
+                            //                            if type == "three" {
+                            //
+                            //                                self.stockImage1?.af_setImage(withURL: stock1URL)
+                            //                                self.stockImage2?.af_setImage(withURL: stock2URL)
+                            //
+                            //                                self.stockImage4?.af_setImage(withURL: stock4URL)
+                            //
+                            //                            }
+                            //
+                            //
+                            //                            if type == "four" {
+                            //
+                            //                                self.stockImage1?.af_setImage(withURL: stock1URL)
+                            //                                self.stockImage2?.af_setImage(withURL: stock2URL)
+                            //                                self.stockImage3?.af_setImage(withURL: stock3URL)
+                            //
+                            //
+                            //                            }
                             
                             
                             
